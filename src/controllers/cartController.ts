@@ -19,6 +19,7 @@ export const getCartProducts= async (req:Request, res:Response)=>{
     }
 }
 
+
 export const addCartProducts=async (req:Request, res:Response)=>{
 
     const {productId, quantity}=req.body
