@@ -11,3 +11,14 @@ test(
         expect(response.statusCode).toBe(200)
     }
 )
+
+// test(
+//     'Debe obtener un codigo de respuesta erroneo',
+//     async ()=>{
+//         //Hacer la peticion
+//         const response = await request(app).get('/4u0')
+
+//         //DEfinir las afirmaciones
+//         expect(response.statusCode).toBe(400)
+//     }
+// )
