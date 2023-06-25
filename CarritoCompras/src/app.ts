@@ -3,10 +3,11 @@
  */
 
 import express, {Application, Request, Response, NextFunction} from 'express'
-
 import rutas_ejemplo from './routes/rutas_ejemplo'
-
 import cartRoutes from  './routes/cartRoutes'
+import dotenv from 'dotenv'
+dotenv.config()
+
 
 const app:Application = express()
 

@@ -5,7 +5,7 @@ import { getCartTotalPrice } from '../controllers/cart2Controller'
 //Rutas del microservicio del carrito de compras
 const myRouter:Router=Router()
 
-myRouter.get('/',getCartProducts)
+myRouter.get('/:userId',getCartProducts)
 
 myRouter.post('/',addCartProducts)
 

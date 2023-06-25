@@ -16,11 +16,12 @@ datasource db {
 }
 
 model Product{
-   id Int @id @default(autoincrement())
-   name String
-   description String
-   price Int
-   cart Cart[]
+  id    Int @id @default(autoincrement())
+  name  String
+  description String?
+  price   Int
+  quantity Int @default(0)
+  cart Cart[]   
 }
 
 model Cart{

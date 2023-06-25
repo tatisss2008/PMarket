@@ -39,7 +39,7 @@ export const addCartProducts=[
     async (req:Request, res:Response)=>{
 
     const errors =validationResult(req)
-    if(!errors.isEmpty){
+        if(!errors.isEmpty()){
         res.status(400)
         // res.json({errors:'Hubo errores en la petición'})
         res.json({errors:errors.array()})
