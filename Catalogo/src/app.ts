@@ -5,6 +5,7 @@
 import express, {Application, Request, Response, NextFunction} from 'express'
 import rutas_ejemplo from './routes/rutas_ejemplo'
 import catalogRoutes from  './routes/catalogRoutes'
+import cors from 'cors'
 
 import dotenv from 'dotenv'
 dotenv.config()
@@ -12,6 +13,7 @@ dotenv.config()
 const app:Application = express()
 
 app.use(express.json())
+app.use(cors())
 
 /**
  * Agregar al stack un conjunto de rutas
