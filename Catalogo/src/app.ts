@@ -5,6 +5,8 @@
 import express, {Application, Request, Response, NextFunction} from 'express'
 import rutas_ejemplo from './routes/rutas_ejemplo'
 import catalogRoutes from  './routes/catalogRoutes'
+import categoryRoutes from  './routes/categoryRoutes'
+
 import cors from 'cors'
 
 import dotenv from 'dotenv'
@@ -22,6 +24,7 @@ app.use(cors())
 app.use('/', catalogRoutes)
 //app.use('/', rutas_ejemplo)
 
+app.use('/category', categoryRoutes )
 
 
 
